@@ -72,8 +72,10 @@ function mostrarDatos() {
             <td>${p.precio}</td>
             <td>${p.presentacion}</td>
             <td><img src='${p.imagen}' width='50%'></td>
-            <td><span onclick='actualizarPedido(${i})' class='btn-editar btn btn-warning'>✏</span></td>
-            <td><span onclick='eliminarPedido(${i})' class='btn-eliminar btn btn-danger'>❌</span></td>
+            <td>
+            <span onclick='actualizarPedido(${i})' class='btn-editar btn btn-warning'>✍️</span>
+            <span onclick='eliminarPedido(${i})' class='btn-eliminar btn btn-danger'>✖️</span>
+            </td>
         `;
     tabla.appendChild(fila);
   });
